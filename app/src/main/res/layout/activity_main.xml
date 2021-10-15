@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv"
+        android:layout_height="wrap_content"
+        android:text="ENCRYPR - DECRYPT"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+    <android.support.design.widget.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:id="@+id/edittext"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your text">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/input"
+            android:maxLines="6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mahoa"
+        android:text="Encrypt"/>
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/giaima"
+        android:text="Decrypt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer by : Lê Đức Anh"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
