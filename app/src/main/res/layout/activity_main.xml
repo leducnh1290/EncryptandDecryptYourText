@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:id="@+id/tv"
         android:layout_height="wrap_content"
-        android:text="ENCRYPR - DECRYPT"
+        android:text="ENCRYPT - DECRYPT"
         android:textSize="25sp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
@@ -30,23 +30,33 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </android.support.design.widget.TextInputLayout>
+
     <android.support.design.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/edittext"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_height="wrap_content"
         android:id="@+id/mahoa"
-        android:text="Encrypt"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Encrypt" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/giaima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Decrypt" />
     <android.support.design.button.MaterialButton
         android:layout_width="wrap_content"
-        android:layout_below="@+id/edittext"
-        android:layout_marginTop="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="50dp"
         android:layout_height="wrap_content"
-        android:id="@+id/giaima"
-        android:text="Decrypt"/>
+        android:layout_below="@id/giaima"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/copy_clipboard"
+        android:text="Copy to clipboard"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
